@@ -2,37 +2,45 @@
 @use "../utils/mixins/"as*;
 
 .footer {
-  padding: rem(48) 0;
+  background-color: var(--color-dark-800);
+
+  &__wrapper {
+    background-color: var(--color-green-400);
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    max-width: 1390px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1336px;
-    width: 100%;
     margin: 0 auto;
-    padding: 0 12px;
+    padding-block: rem(88);
 
     @include media(mobile-l) {
       flex-direction: column-reverse;
       gap: 30px;
+      padding-block: rem(24);
       text-align: center;
+
     }
   }
 
-  &__nav {
+  &__items {
     display: flex;
     align-items: center;
   }
 
   &__item {
     &:not(:last-child) {
-      margin-right: rem(24);
+      margin-right: rem(48);
     }
-  }
-
-  &__link {
-    font-weight: var(--fw-600);
-    line-height: 1.5;
   }
 }
