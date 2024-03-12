@@ -1,0 +1,25 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins"as*;
+
+.box {
+  padding: rem(112) 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 596px;
+    width: 100%;
+  }
+
+  h2,
+  p {
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    text-transform: initial;
+  }
+}
