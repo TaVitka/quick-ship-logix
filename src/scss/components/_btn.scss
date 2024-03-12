@@ -4,32 +4,30 @@
 *[class].btn {
   display: inline-block;
   margin: 0;
-  padding: 22px 24px;
-  border: 2px solid var(--color-milk-100);
-  font-weight: var(--fw-600);
-  font-size: 18px;
-  line-height: 1;
-  color: var(--color-gray-700);
-  text-align: center;
+  padding: 8px 20px;
+  border: 1px solid var(--color-black);
   border-radius: var(--radius-main);
-  background-color: var(--color-milk-100);
-  transition-property: background-color, color, border-color;
+  font-weight: var(--fw-500);
+  font-size: 18px;
+  line-height: 1.21;
+  color: var(--color-black);
+  text-align: center;
+  background-color: var(--color-white);
+  transition-property: background-color, color;
   transition-duration: 0.4s;
   transition-timing-function: ease-in-out;
 
   &--reverse,
   &:hover {
     color: var(--color-white);
-    background-color: var(--color-blue-400);
-    border-color: var(--color-blue-400);
+    background-color: var(--color-black);
   }
 
   &--reverse {
-    padding: 22px;
 
     &:hover {
-      background-color: var(--color-milk-100);
-      color: var(--color-gray-700);
+      background-color: var(--color-white);
+      color: var(--color-black);
     }
   }
 

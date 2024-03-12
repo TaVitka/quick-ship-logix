@@ -5,13 +5,18 @@
   position: fixed;
   top: 0;
   z-index: 10;
-  padding: clamp(12px, rem(24), 24px) 0;
   width: 100%;
-  background-color: var(--color-white);
+  background-color: var(--color-green-400);
   transition-property: transform, padding;
   transition-duration: 0.15s;
 
   &.hide {
     transform: translateY(-100%);
+  }
+
+  .container {
+    max-width: 1390px;
+    width: 100%;
+    padding: 0 15px;
   }
 }

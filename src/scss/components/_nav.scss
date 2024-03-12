@@ -12,12 +12,17 @@
   }
 
   .logo {
-    max-width: 236px;
+    max-width: 268px;
     width: 100%;
+
+    @include media(tablet-wide) {
+      max-width: 220px;
+    }
   }
 
   &__inner {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     width: 100%;
 
@@ -42,7 +47,7 @@
   &__list {
     display: flex;
     align-items: center;
-    margin: 0 32px 0 0;
+    margin: 0 20px 0 0;
 
     @include media(tablet) {
       z-index: -1;
@@ -53,7 +58,7 @@
 
   &__item {
     &:not(:last-of-type) {
-      margin-right: rem(32);
+      margin-right: 20px;
 
       @include media(tablet) {
         margin-right: 0;
@@ -66,20 +71,20 @@
   }
 
   &__link {
-    padding-bottom: 7px;
+    padding: 4px;
     text-transform: capitalize;
     transition: border-bottom 0.3s ease-in-out;
 
     &.true,
     &:hover {
-      border-bottom: 2px solid var(--color-gray-700);
+      border-bottom: 2px solid var(--color-black);
     }
   }
 
   &__btns {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 20px;
 
     @include media(tablet) {
       flex-direction: column;
