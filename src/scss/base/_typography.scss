@@ -1,0 +1,86 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+h1,
+h2,
+h3 {
+  overflow: hidden;
+  font-family: var(--font-family-primary);
+  line-height: 1.15;
+  color: var(--color-gray-700);
+}
+
+h1,
+h2 {
+  font-size: clamp(32px, 2rem + 1vi, 48px);
+  letter-spacing: 0.28rem;
+  text-transform: capitalize;
+
+  @include media(tablet) {
+    letter-spacing: 0.10rem;
+  }
+}
+
+h2,
+h3 {
+  font-weight: var(--fw-700);
+}
+
+h1 {
+  font-weight: var(--fw-800);
+}
+
+h2 {
+  margin-bottom: rem(48);
+
+  @include media(mobile-l) {
+    margin-bottom: rem(30);
+  }
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.title {
+
+}
+
+.subtitle {
+
+}
+
+.desc {
+
+}
+
+a {
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--color-gray-700);
+}
+
+p {
+  font-size: clamp(18px, 0.5rem + 1vi, 20px);
+  color: var(--color-gray-600);
+}
+
+time {
+  color: var(--color-gray-600);
+  font-size: 14px;
+  display: inline-block;
+}
+
+input,
+textarea {
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--color-gray-700);
+
+  ::placeholder {
+    color: var(--color-gray-730);
+  }
+}
+
+.copyright {
+}
