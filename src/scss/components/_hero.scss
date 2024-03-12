@@ -6,52 +6,32 @@
   padding: 0;
 
   &__inner {
+    @include cover-background();
+
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    border-bottom-left-radius: var(--radius-background);
-    border-bottom-right-radius: var(--radius-background);
-    padding: rem(128) 0;
-    min-height: 622px;
-    background-position: 100% 0;
-    background-size: contain;
-    background-repeat: no-repeat;
+    min-height: 700px;
+    padding-top: rem(120);
   }
 
   &__content {
     z-index: 1;
     margin-inline: rem(112) 0;
-    max-width: 630px;
+    max-width: 720px;
     width: 100%;
   }
 
   h1 {
-    line-height: 1.25;
-    margin-bottom: rem(32);
+    width: 90%;
+    margin-bottom: 24px;
   }
 
-  &__desc {
-    width: 85%;
-    color: var(--color-blue-400);
-    margin-bottom: rem(24);
-  }
+  &__text {
+    margin-bottom: 32px;
 
-  &--home {
-    .hero__content {
-      max-width: 710px;
-    }
-  }
-
-  &--about,
-  &--menu {
-    h1 {
-      margin-bottom: rem(24);
-    }
-  }
-
-  &--menu {
-    p {
-      width: 97%;
+    p:not(:last-of-type) {
+      margin-bottom: 20px;
     }
   }
 }
