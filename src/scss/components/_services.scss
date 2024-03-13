@@ -35,4 +35,86 @@
     letter-spacing: 0.04rem;
   }
 
+  &__accent,
+  &__text {
+    padding: 32px 24px;
+    border-radius: var(--radius-main);
+  }
+
+  &__accent {
+    background-color: var(--color-green-250);
+  }
+
+  &__text {
+    max-width: 389px;
+    width: 100%;
+    background-color: var(--color-gray-300);
+
+    p:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__desc {
+    width: 94%;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  &--freight,
+  &--warehousing {
+    .services__name {
+      padding-left: 24px;
+    }
+  }
+
+  &--freight {
+    padding: rem(64) 0 rem(86);
+
+    h2 {
+      margin-bottom: 36px;
+    }
+
+    .services__grid {
+      margin-bottom: rem(64);
+    }
+  }
+
+  &--warehousing,
+  &--distribution {
+    padding: rem(86) 0;
+  }
+
+  &--warehousing {
+    .services__grid:not(:last-of-type) {
+      margin-bottom: rem(48);
+    }
+  }
+
+  &--distribution {
+    .services__img {
+      margin-bottom: 48px;
+    }
+
+    .services__accent {
+      background-color: var(--color-green-650);
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      p:not(:last-of-type) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &--additional {
+    padding: rem(97) 0 rem(124);
+
+    .services__name {
+      margin-bottom: 8px;
+    }
+  }
 }
