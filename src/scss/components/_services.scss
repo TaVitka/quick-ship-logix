@@ -11,6 +11,42 @@
     margin-bottom: 48px;
   }
 
+  &__item {
+    &--icon {
+      position: relative;
+      padding-top: 344px;
+      padding-left: 24px;
+
+      &::before {
+        @include cover-background();
+
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 320px;
+        height: 320px;
+      }
+    }
+
+    &--hand::before {
+      background-image: url("../images/icons/hand-icon.svg")
+    }
+
+    &--bell::before {
+      background-image: url("../images/icons/bell-icon.svg")
+    }
+
+    &--van::before {
+      background-image: url("../images/icons/van-icon.svg")
+    }
+  }
+
+  &__content {
+    padding-inline: 24px;
+    padding-bottom: 24px;
+  }
+
   &__title {
     margin-bottom: 0;
     text-align: left;
@@ -115,6 +151,29 @@
 
     .services__name {
       margin-bottom: 8px;
+    }
+  }
+
+  &--safety {
+    padding: rem(80) 0 rem(132);
+
+    .services__name {
+      margin-bottom: 8px;
+    }
+  }
+
+  &--customization {
+    padding: rem(80) 0;
+
+    .services__grid {
+      gap: 48px 24px;
+    }
+
+    .services__name {
+      margin-bottom: 8px;
+    }
+    .services__desc {
+      width: 100%;
     }
   }
 }

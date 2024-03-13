@@ -99,7 +99,34 @@
     }
   }
 
+  &__cat {
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+
   &--rows {
     padding: 0 0 rem(127);
+  }
+
+  &--fleet {
+    padding: rem(100) 0;
+
+    .features__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 48px 24px;
+
+      ul {
+        padding-left: 24px;
+      }
+
+      ul li {
+        list-style: disc;
+      }
+    }
+
+    .features__text {
+      font-size: 18px;
+      line-height: 1.5;
+    }
   }
 }
