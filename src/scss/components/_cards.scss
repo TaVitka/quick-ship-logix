@@ -14,13 +14,57 @@
 
   &__item {
     padding: 32px 24px;
-    background-color: var(--color-green-300);
-    border-radius: var(--radius-large);
+    background-color: var(--color-gray-200);
+    border-radius: var(--radius-main);
   }
 
   &__title {
     margin-bottom: 24px;
     font-size: 22px;
     line-height: 1.2;
+  }
+
+  &--colored {
+    .cards__item {
+      background-color: var(--color-green-300);
+      border-radius: var(--radius-large);
+    }
+  }
+
+  &--even {
+    padding: 0 0 rem(86);
+
+    .cards__grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 1fr;
+      gap: 40px 24px;
+    }
+  }
+
+  &--dark {
+    padding: rem(80) 0;
+
+    h2 {
+      text-align: left;
+      text-transform: initial;
+    }
+
+    .cards__item {
+      background-color: var(--color-black);
+    }
+
+    .cards__title,
+    .cards__text {
+      font-size: 18px;
+      color: var(--color-white);
+    }
+
+    .cards__title {
+      line-height: 1;
+    }
+
+    .cards__text {
+      line-height: 1.5;
+    }
   }
 }

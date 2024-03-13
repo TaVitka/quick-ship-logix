@@ -3,7 +3,8 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   overflow: hidden;
   font-family: var(--font-family-primary);
   font-weight: var(--fw-600);
@@ -44,6 +45,13 @@ h2 {
 h3 {
   font-size: 26px;
   line-height: 1;
+}
+
+h4 {
+  margin-bottom: 8px;
+  font-size: clamp(18px, 0.5rem + 1vi, 22px);
+  line-height: 1.6;
+  color: var(--color-gray-800);
 }
 
 .desc {
