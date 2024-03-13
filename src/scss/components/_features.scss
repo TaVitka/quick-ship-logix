@@ -2,12 +2,7 @@
 @use "../utils/mixins/"as*;
 
 .features {
-
-  padding: rem(112) 0;
-
-  &__title {
-    text-align: center;
-  }
+  padding: rem(112) 0 rem(100);
 
   &__grid {
     display: grid;

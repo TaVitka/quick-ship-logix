@@ -4,6 +4,10 @@
 .box {
   padding: rem(112) 0;
 
+  h2 {
+    text-align: left;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
