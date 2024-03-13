@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    padding-block: rem(88);
+    padding-block: rem(88) rem(84);
 
     @include media(mobile-l) {
       flex-direction: column-reverse;

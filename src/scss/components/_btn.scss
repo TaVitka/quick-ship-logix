@@ -56,17 +56,6 @@
     }
   }
 
-  &--send {
-    max-width: fit-content;
-    background-color: var(--color-white);
-
-    &:hover {
-      background-color: var(--color-gray-600);
-      border-color: var(--color-gray-600);
-      color: var(--color-milk-100)
-    }
-  }
-
   &--absolute {
     position: absolute;
     inset: 0;
