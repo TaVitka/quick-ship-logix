@@ -2,52 +2,37 @@
 @use "../utils/mixins/"as*;
 
 .services {
-  &__item {
+  padding: rem(92) 0 rem(100);
+
+  &__items {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    margin-bottom: 48px;
   }
 
-  .btn {
-    align-self: flex-end;
+  &__title {
+    margin-bottom: 0;
+    text-align: left;
   }
 
-  &__wrapper {
-    margin-bottom: rem(48);
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    justify-content: stretch;
+    gap: 72px 24px;
   }
 
-  img {
-    max-width: 342px;
-    width: 100%;
-    margin-bottom: rem(24);
-    border-radius: var(--radius-main);
+  &__img {
+    margin-bottom: 24px;
+    border-radius: var(--radius-main) var(--radius-main) 0 0;
   }
 
-  h3 {
-    text-transform: capitalize;
-    margin-bottom: 8px;
+  &__name {
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.04rem;
   }
 
-  &__desc {
-    margin-bottom: rem(24);
-  }
-
-  &__list {
-    padding-left: rem(20);
-  }
-
-  &__list-item {
-    display: list-item;
-    padding-left: rem(10);
-    list-style: disc;
-    color: var(--color-gray-600);
-
-    &:not(:last-of-type) {
-      margin-bottom: 5px;
-    }
-  }
-
-  &--list {
-    .services__wrapper {
-      margin-bottom: 0;
-    }
-  }
 }
