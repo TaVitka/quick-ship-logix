@@ -57,4 +57,21 @@
   &--overview{
     padding: rem(100) 0;
   }
+
+  &--careers {
+    padding: rem(86) 0;
+
+    .box__content {
+      max-width: 541px;
+    }
+
+    p {
+      font-size: clamp(18px, 0.5rem + 1vi, 20px);
+      margin-bottom: 0;
+    }
+
+    .box__img {
+      margin-right: 54px;
+    }
+  }
 }
