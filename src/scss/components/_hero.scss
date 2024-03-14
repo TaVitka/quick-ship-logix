@@ -47,4 +47,15 @@
     }
   }
 
+  &--career {
+    h1,
+    .desc {
+      width: 75%;
+    }
+
+    .desc {
+      line-height: 1.2;
+    }
+  }
+
 }
