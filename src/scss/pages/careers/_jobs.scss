@@ -1,0 +1,56 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins"as*;
+
+.jobs {
+  padding: rem(97) 0;
+  background-color: var(--color-gray-500);
+
+  .container {
+    max-width: 1440px;
+    width: 100%;
+    position: relative;
+  }
+
+  &__title {
+    color: var(--color-green-400);
+  }
+
+  &__slider {
+    max-width: 1216px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__slides {
+    align-items: stretch;
+    margin-bottom: 50px;
+  }
+
+  &__slide {
+    max-width: 390px;
+    width: 100%;
+    height: auto;
+    padding-block: 12px 32px;
+    padding-inline: 24px;
+    background-color: var(--color-white);
+    border-radius: var(--radius-main);
+    text-align: left;
+  }
+
+  &__name {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 1.6;
+    letter-spacing: 0.04rem;
+  }
+
+  &__content {
+    p {
+      font-size: 14px;
+
+      &:not(last-of-type) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

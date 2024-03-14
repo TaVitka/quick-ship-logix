@@ -34,94 +34,38 @@
     padding: 19px 32px;
     line-height: 1;
   }
-
-
-
-
-  &--arrow {
-    position: relative;
-    padding-right: 64px;
-
-    &::before {
-      @include cover-background();
-
-      content: '';
-      position: absolute;
-      top: 50%;
-      right: 8px;
-      transform: translateY(-50%);
-      width: 48px;
-      height: 48px;
-      background-image: var(--icon-arrow);
-    }
-  }
-
-  &--absolute {
-    position: absolute;
-    inset: 0;
-    padding: 0;
-    background-color: transparent;
-
-    &:hover {
-      background-color: transparent;
-    }
-
-    &::before {
-      @include cover-background();
-
-      content: '';
-      position: absolute;
-      bottom: 24px;
-      right: 24px;
-      width: 48px;
-      height: 48px;
-      transform: scale(1);
-      transition: transform 0.4s ease-in-out;
-
-      background-image: var(--icon-absolute);
-    }
-
-    &:hover::before {
-      transform: scale(1.2);
-    }
-  }
 }
 
-*[class].swiper {
+*[class] {
   .swiper-button {
-    width: 64px;
-    height: 64px;
-    background-color: var(--color-gray-700);
-    border-radius: var(--radius-round);
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(calc(-50% + 20px));
+    bottom: unset;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-gsy-150);
+    border-radius: 50%;
+    z-index: 10;
 
     &::after {
-      @include contain-background();
+      @include cover-background();
 
-      content: '';
-      position: absolute;
-      height: 20px;
-      width: 26px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-image: var(--icon-swiper);
+      content: "";
+      inset: 0;
+      width: 24px;
+      height: 24px;
+      background-image: var(--icon-arrow);
     }
-  }
 
-  .swiper-button-prev {
-    &::after {
-      transform: translate(-50%, -50%) rotate(180deg);
+    &-next {
+      right: 28px;
+      &::after {
+        transform: rotate(180deg);
+      }
     }
-  }
 
-  .swiper-button-disabled {
-  }
-
-  .swiper-pagination {
-  }
-
-  .swiper-pagination-bullet {
+    &-prev {
+      left: 28px;
+    }
   }
 }

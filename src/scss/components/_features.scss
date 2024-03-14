@@ -2,7 +2,7 @@
 @use "../utils/mixins/"as*;
 
 .features {
-  padding: rem(112) 0 rem(100);
+  padding: rem(112) 0 rem(96);
 
   &__title {
     text-align: left;
@@ -104,6 +104,12 @@
     font-size: 18px;
   }
 
+  &__desc {
+    font-size: 24px;
+    line-height: 1.6;
+    letter-spacing: 0.04rem;
+  }
+
   &--rows {
     padding: 0 0 rem(127);
   }
@@ -127,6 +133,28 @@
     .features__text {
       font-size: 18px;
       line-height: 1.5;
+    }
+  }
+
+  &--careers {
+    padding: rem(100) 0;
+
+    .features__grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 44px 24px;
+    }
+
+    .features__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 12px;
+      background-color: var(--color-green-400);
+      justify-items: center;
+    }
+
+    .features__name {
+
     }
   }
 }

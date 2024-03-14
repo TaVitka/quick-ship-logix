@@ -1,24 +1,31 @@
 import Swiper, { Navigation, Pagination, EffectFade, Scrollbar } from 'swiper';
+Swiper.use([Navigation]);
 
-let options = {
-  slidesPerView: 1,
+const swiperJobs = new Swiper('.jobs__slider', {
+  slidesPerView: 3,
+  spaceBetween: 24,
   speed: 700,
   effect: 'fade',
   autoplay: {
-    delay: 200,
+    delay: 300,
   },
-  centeredSlides: true,
-  modules: [Navigation, Scrollbar, Pagination, EffectFade],
-  draggable: true,
-  grabCursor: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".jobs .swiper-button-next",
+    prevEl: ".jobs .swiper-button-prev",
   },
-  pagination: {
-    clickable: true,
-    el: '.swiper-pagination',
-  },
-}
+});
 
-const swiperSpecials = new Swiper('.special__slider1', options);
+const swiperTestimonials = new Swiper('.testimonials__slider', {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  centeredSlides: true,
+  speed: 700,
+  effect: 'fade',
+  autoplay: {
+    delay: 300,
+  },
+  navigation: {
+    nextEl: ".testimonials .swiper-button-next",
+    prevEl: ".testimonials .swiper-button-prev",
+  },
+});
