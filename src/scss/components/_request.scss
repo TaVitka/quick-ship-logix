@@ -46,4 +46,14 @@
     width: fit-content;
     padding: 14px 24px;
   }
+
+  @include media(tablet) {
+    padding: rem(48) 0;
+  }
+
+  @include media(mobile-m) {
+    .btn {
+      width: 100%;
+    }
+  }
 }

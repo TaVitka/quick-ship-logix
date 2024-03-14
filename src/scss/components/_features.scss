@@ -157,4 +157,63 @@
 
     }
   }
+
+  @include media(desktop) {
+    &__grid {
+      gap: 48px 24px;
+    }
+  }
+
+  @include media(tablet) {
+    padding: rem(48) 0;
+
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    &__item {
+      grid-column: auto;
+      max-width: 100%;
+      margin-right: 0;
+      padding: 24px;
+    }
+  }
+
+  @include media(mobile-l) {
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 24px 0;
+    }
+
+    &__item {
+      &--expertise::before {
+        right: 0;
+      }
+    }
+
+    &__name {
+      padding-inline: 0 80px;
+      padding-block: 24px;
+
+      &::before {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+
+  @include media(mobile-s) {
+    &__name {
+      padding-block: 80px 0;
+      padding-inline: 0;
+
+      &::before {
+        left: 0;
+        right: unset;
+        top: 0;
+        transform: translateY(0);
+      }
+    }
+  }
 }

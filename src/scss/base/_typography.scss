@@ -24,7 +24,7 @@ h3,
 
 h1 {
   margin-bottom: rem(24);
-  font-size: clamp(44px, 2rem + 2vi, 54px);
+  font-size: clamp(38px, 2rem + 2vi, 54px);
   color: var(--color-green-400);
 
   span {
@@ -38,6 +38,7 @@ h2 {
   text-align: center;
 
   @include media(mobile-l) {
+    font-size: 34px;
     margin-bottom: rem(24);
   }
 }
