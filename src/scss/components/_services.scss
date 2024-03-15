@@ -102,10 +102,35 @@
     .services__name {
       padding-left: 24px;
     }
+
+    @include media(tablet) {
+      .services__name {
+        padding-left: 0;
+      }
+      .services__grid {
+        gap: 24px;
+      }
+
+      .services__item:last-child,
+      .services__text:last-child {
+        grid-column: 1/ span 2;
+      }
+
+      .services__text {
+        max-width: 100%;
+      }
+    }
+
+    @include media(mobile-l) {
+      .services__item:last-child,
+      .services__text:last-child {
+        grid-column: auto;
+      }
+    }
   }
 
   &--freight {
-    padding: rem(64) 0 rem(86);
+    padding: rem(86) 0 rem(86);
 
     h2 {
       margin-bottom: 36px;
@@ -113,6 +138,13 @@
 
     .services__grid {
       margin-bottom: rem(64);
+    }
+
+    @include media(tablet) {
+      h2,
+      .services__grid {
+        margin-bottom: 24px;
+      }
     }
   }
 
@@ -124,12 +156,25 @@
   &--warehousing {
     .services__grid:not(:last-of-type) {
       margin-bottom: rem(48);
+
+      @include media(tablet) {
+        margin-bottom: 24px;
+      }
     }
   }
 
   &--distribution {
     .services__img {
       margin-bottom: 48px;
+
+      @include media(tablet) {
+        margin-bottom: 24px;
+      }
+
+      @include media(mobile-s) {
+        height: auto;
+        aspect-ratio: 4/3;
+      }
     }
 
     .services__accent {
@@ -202,7 +247,7 @@
 
     &__img {
       height: auto;
-      aspect-ratio: 5/3;
+      aspect-ratio: 6/3;
       margin-bottom: 12px;
     }
   }
