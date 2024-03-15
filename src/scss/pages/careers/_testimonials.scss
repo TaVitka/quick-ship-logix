@@ -37,4 +37,13 @@
     left: 0;
   }
 
+  @include media(tablet) {
+    padding: rem(48) 0 rem(80);
+
+    .swiper-button {
+      bottom: 20px;
+      transform: translateY(0);
+    }
+  }
+
 }

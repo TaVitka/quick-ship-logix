@@ -27,8 +27,6 @@
   }
 
   &__slide {
-    max-width: 390px;
-    width: 100%;
     height: auto;
     padding-block: 12px 32px;
     padding-inline: 24px;
@@ -52,5 +50,29 @@
         margin-bottom: 12px;
       }
     }
+  }
+
+  @include media(desktop-medium) {
+    padding-inline: 70px;
+
+    .container {
+      max-width: 1216px;
+    }
+
+    .swiper-button-next {
+      right: -60px
+    }
+
+    .swiper-button-prev {
+      left: -60px
+    }
+  }
+
+  @include media(tablet) {
+    padding: rem(48) 0;
+  }
+
+  @include media(mobile-s) {
+    padding: rem(48) 0 0;
   }
 }

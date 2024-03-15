@@ -1,17 +1,27 @@
 import Swiper, { Navigation, Pagination, EffectFade, Scrollbar } from 'swiper';
-Swiper.use([Navigation]);
+Swiper.use([Navigation, Pagination, EffectFade, Scrollbar]);
 
 const swiperJobs = new Swiper('.jobs__slider', {
   slidesPerView: 3,
   spaceBetween: 24,
   speed: 700,
-  effect: 'fade',
   autoplay: {
     delay: 300,
   },
   navigation: {
     nextEl: ".jobs .swiper-button-next",
     prevEl: ".jobs .swiper-button-prev",
+  },
+  breakpoints: {
+    1440: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    300: {
+      slidesPerView: 1,
+    }
   },
 });
 
@@ -20,7 +30,6 @@ const swiperTestimonials = new Swiper('.testimonials__slider', {
   spaceBetween: 24,
   centeredSlides: true,
   speed: 700,
-  effect: 'fade',
   autoplay: {
     delay: 300,
   },

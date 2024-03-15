@@ -67,5 +67,21 @@
     &-prev {
       left: 28px;
     }
+
+    @include media(tablet) {
+      top: unset;
+      bottom: 10px;
+      width: 40px;
+      height: 40px;
+      transform: translateY(0);
+
+      &-next {
+        right: 20px !important;
+      }
+
+      &-prev {
+        left: 20px !important;
+      }
+    }
   }
 }

@@ -95,6 +95,10 @@
 
     .box__img {
       margin-right: 54px;
+
+      @include media(tablet) {
+        margin-right: 0;
+      }
     }
   }
 
@@ -110,6 +114,11 @@
 
     &__img {
       width: 35%;
+    }
+
+    &__icon {
+      max-width: 150px;
+      height: 150px;
     }
   }
 
@@ -129,14 +138,11 @@
       height: auto;
       aspect-ratio: 6 / 3;
     }
-
-    &__icon {
-      max-width: 150px;
-      height: 150px;
-    }
   }
 
   @include media(mobile-s) {
+    padding: rem(48) 0 0;
+
     &__img {
       aspect-ratio: 2 / 2;
     }

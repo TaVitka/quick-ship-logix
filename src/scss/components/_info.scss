@@ -100,6 +100,10 @@
 
   @include media(tablet) {
     padding: rem(48) 0;
+
+    &__content {
+      padding: 24px 0;
+    }
   }
 
   @include media(mobile-l) {
@@ -109,6 +113,7 @@
 
     &__items {
       grid-template-columns: 1fr;
+      gap: 24px;
     }
 
     &__item {
@@ -126,10 +131,6 @@
       width: inherit;
       height: auto;
       aspect-ratio: 3 / 1;
-    }
-
-    &__content {
-      padding: 24px 0;
     }
 
     &__extras {
@@ -150,5 +151,9 @@
     &__img {
       aspect-ratio: 2 / 1;
     }
+  }
+
+  @include media(mobile-s) {
+    padding: rem(48) 0 0;
   }
 }
