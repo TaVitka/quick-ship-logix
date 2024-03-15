@@ -38,8 +38,9 @@ h2 {
   text-align: center;
 
   @include media(mobile-l) {
-    font-size: 34px;
     margin-bottom: rem(24);
+    font-size: 34px;
+    text-align: left;
   }
 }
 

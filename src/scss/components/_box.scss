@@ -58,6 +58,17 @@
         margin-bottom: 40px;
       }
     }
+
+    @include media(mobile-l) {
+      .box__inner {
+        flex-direction: column-reverse;
+      }
+
+      .box__content p {
+        width: 100%;
+        margin-bottom: 24px;
+      }
+    }
   }
 
   &--overview{
@@ -112,11 +123,21 @@
       height: auto;
       aspect-ratio: 3 / 2;
     }
+
+    &__icon {
+      max-width: 150px;
+      height: 150px;
+    }
   }
 
   @include media(mobile-s) {
     &__img {
       aspect-ratio: 2 / 2;
+    }
+
+    &__icon {
+      max-width: 110px;
+      height: 110px;
     }
   }
 }

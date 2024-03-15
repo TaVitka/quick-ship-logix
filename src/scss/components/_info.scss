@@ -97,4 +97,58 @@
       letter-spacing: 0.02rem;
     }
   }
+
+  @include media(tablet) {
+    padding: rem(48) 0;
+  }
+
+  @include media(mobile-l) {
+    &__title {
+      font-size: 34px;
+    }
+
+    &__items {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      grid-column: auto;
+      width: 100%;
+
+      &--listed {
+        .info__text {
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    &__img {
+      width: inherit;
+      height: auto;
+      aspect-ratio: 3 / 1;
+    }
+
+    &__content {
+      padding: 24px 0;
+    }
+
+    &__extras {
+      gap: 24px;
+      grid-template-columns: 1fr;
+    }
+
+    &__extra {
+      padding-bottom: 0;
+    }
+
+    &__extra-name {
+      padding-left: 0;
+    }
+  }
+
+  @include media(mobile-m) {
+    &__img {
+      aspect-ratio: 2 / 1;
+    }
+  }
 }

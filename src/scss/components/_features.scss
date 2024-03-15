@@ -181,6 +181,9 @@
   }
 
   @include media(mobile-l) {
+    &__title {
+     font-size: 34px;
+    }
     &__grid {
       grid-template-columns: 1fr;
       gap: 24px 0;
@@ -213,6 +216,12 @@
         right: unset;
         top: 0;
         transform: translateY(0);
+      }
+    }
+
+    &__item {
+      &--list {
+        grid-template-columns: 1fr;
       }
     }
   }

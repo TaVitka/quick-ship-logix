@@ -61,7 +61,7 @@
   @include media(tablet) {
     &__inner {
       min-height: 350px;
-      padding: rem(60) 0;
+      padding: rem(100) 0;
     }
 
     &__content {
@@ -72,6 +72,12 @@
     h1,
     .desc {
       width: 100%;
+    }
+  }
+
+  @include media(mobile-m) {
+    &__inner {
+      padding: rem(60) 0;
     }
   }
 

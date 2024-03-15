@@ -99,12 +99,11 @@ section {
     position: absolute;
     z-index: 1;
     inset: 0;
-    background: var(--gradient-main);
   }
 
-  @include media(tablet) {
+  @include media(mobile-l) {
     &::before {
-      background: var(--gradient-intense);
+      background: var(--gradient-main);
     }
   }
 }
