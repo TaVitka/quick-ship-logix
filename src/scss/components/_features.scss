@@ -168,6 +168,7 @@
         br {
           display: none;
         }
+
         &:last-child {
           grid-column: 1 / span 2;
         }
@@ -211,7 +212,7 @@
 
   @include media(mobile-l) {
     &__title {
-     font-size: 34px;
+      font-size: 34px;
     }
     &__grid {
       grid-template-columns: 1fr;

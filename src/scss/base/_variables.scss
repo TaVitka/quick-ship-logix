@@ -22,8 +22,7 @@
   --color-black: #000000;
   --color-dark-800: #000207;
 
-  --color-green-650
-  : #E2FF2F80;
+  --color-green-650: #E2FF2F80;
   --color-green-500: #C2D83B;
   --color-green-450: #E0FF2380;
   --color-green-400: #E0FF23;
@@ -50,6 +49,5 @@
   --icon-arrow: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 24.5L13.5 23L4 13.5H24V11.5H4L13.5 2L12 0.5L0 12.5L12 24.5Z' fill='%23E0FF23'/%3E%3C/svg%3E%0A");
 
   //gradient
-  --gradient-main: linear-gradient(270deg, #f1f1f100 0%, #0000006e 0%, #00000030 100%);
-;
+  --gradient-main: linear-gradient(270deg, #f1f1f100 0%, #0000006e 0%, #00000030 100%);;
 }
